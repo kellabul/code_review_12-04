@@ -8,12 +8,16 @@ typedef struct Human {
 
 } Human;
 
+void PrintError() {
+  printf("n/a");
+  exit(1);
+}
+
 int ReadNumber() {
   int number = 0;
   int result = scanf("%d", &number);
-  if (result == 0) {
-    printf("n/a");
-    exit(1);
+  if (result == 0 || number < 0) {
+    PrintError();
   }
   return number;
 }
