@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define MAX_NAME_SIZE 20
+
 typedef struct Human {
-  char name[20];
-  char surname[20];
+  char name[MAX_NAME_SIZE];
+  char surname[MAX_NAME_SIZE];
   int height;
 
 } Human;
